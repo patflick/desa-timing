@@ -1,0 +1,92 @@
+== Node distribution == 
+== p=8 processes on 1 nodes ==
+--  Node: 'c506-094.stampede2.tacc.utexas.edu' (8/8)
+        Ranks: 0, 1, 2, 3, 4, 5, 6, 7
+TIMER	1.018e+02	1.019e+02	1.019e+02	2	desa_read: read str
+TIMER	3.121e+02	3.121e+02	3.121e+02	2	desa_read: read SA
+TIMER	4.566e+02	4.566e+02	4.566e+02	2	desa_read: init q-mer hist
+TIMER	4.818e-03	1.723e-02	2.961e-02	3	repartition: 1D-partition
+TIMER	2.322e+02	2.324e+02	2.326e+02	3	repartition: redistribute
+TIMER	2.327e+02	2.327e+02	2.327e+02	2	desa_read: repartition
+TIMER	2.382e+02	2.456e+02	2.495e+02	2	desa_read: RMQ construct
+TIMER	1.541e+03	1.543e+03	1.546e+03	1	read patterns file
+TIMER	8.871e+02	9.026e+02	9.273e+02	2	Phase I: local queries
+TIMER	5.802e+01	5.873e+01	5.935e+01	2	Phase I: all2all patterns
+TIMER	3.219e+03	3.374e+03	3.488e+03	2	Phase II: local_locate_possible
+TIMER	1.262e+02	1.276e+02	1.285e+02	2	all2all patterns for cmp
+TIMER	9.771e+01	1.019e+02	1.056e+02	2	Phase III: local strcmp
+TIMER	5.856e+00	6.006e+00	6.160e+00	2	return P3 results
+TIMER	1.203e+01	1.245e+01	1.342e+01	2	return P2 results
+TIMER	4.729e+03	4.730e+03	4.730e+03	1	bulk_locate
+TIMER	8.917e+02	9.055e+02	9.292e+02	2	Phase I: local queries
+TIMER	5.945e+01	6.036e+01	6.101e+01	2	Phase I: all2all patterns
+TIMER	3.177e+03	3.358e+03	3.471e+03	2	Phase II: local_locate_possible
+TIMER	1.222e+02	1.236e+02	1.240e+02	2	all2all patterns for cmp
+TIMER	9.784e+01	1.021e+02	1.056e+02	2	Phase III: local strcmp
+TIMER	5.798e+00	5.980e+00	6.156e+00	2	return P3 results
+TIMER	1.164e+01	1.191e+01	1.232e+01	2	return P2 results
+TIMER	4.713e+03	4.713e+03	4.714e+03	1	bulk_locate
+TIMER	9.585e+02	9.740e+02	9.951e+02	2	Phase I: local queries
+TIMER	6.172e+01	6.297e+01	6.371e+01	2	Phase I: all2all patterns
+TIMER	3.273e+03	3.492e+03	3.594e+03	2	Phase II: local_locate_possible
+TIMER	1.261e+02	1.274e+02	1.280e+02	2	all2all patterns for cmp
+TIMER	1.006e+02	1.046e+02	1.080e+02	2	Phase III: local strcmp
+TIMER	5.964e+00	6.128e+00	6.344e+00	2	return P3 results
+TIMER	1.230e+01	1.263e+01	1.352e+01	2	return P2 results
+TIMER	4.911e+03	4.911e+03	4.912e+03	1	bulk_locate
+TIMER	9.164e+02	9.400e+02	9.569e+02	2	Phase I: local queries
+TIMER	5.919e+01	6.018e+01	6.071e+01	2	Phase I: all2all patterns
+TIMER	3.230e+03	3.449e+03	3.555e+03	2	Phase II: local_locate_possible
+TIMER	1.237e+02	1.250e+02	1.254e+02	2	all2all patterns for cmp
+TIMER	9.966e+01	1.037e+02	1.070e+02	2	Phase III: local strcmp
+TIMER	5.815e+00	6.069e+00	6.364e+00	2	return P3 results
+TIMER	1.153e+01	1.167e+01	1.179e+01	2	return P2 results
+TIMER	4.825e+03	4.825e+03	4.826e+03	1	bulk_locate
+TIMER	9.130e+02	9.375e+02	9.531e+02	2	Phase I: local queries
+TIMER	6.090e+01	6.193e+01	6.242e+01	2	Phase I: all2all patterns
+TIMER	3.230e+03	3.452e+03	3.561e+03	2	Phase II: local_locate_possible
+TIMER	1.258e+02	1.270e+02	1.275e+02	2	all2all patterns for cmp
+TIMER	1.002e+02	1.045e+02	1.078e+02	2	Phase III: local strcmp
+TIMER	6.010e+00	6.132e+00	6.295e+00	2	return P3 results
+TIMER	1.191e+01	1.247e+01	1.348e+01	2	return P2 results
+TIMER	4.834e+03	4.835e+03	4.835e+03	1	bulk_locate
+TIMER	9.153e+02	9.369e+02	9.549e+02	2	Phase I: local queries
+TIMER	5.891e+01	5.988e+01	6.051e+01	2	Phase I: all2all patterns
+TIMER	3.217e+03	3.443e+03	3.555e+03	2	Phase II: local_locate_possible
+TIMER	1.236e+02	1.249e+02	1.254e+02	2	all2all patterns for cmp
+TIMER	9.774e+01	1.028e+02	1.069e+02	2	Phase III: local strcmp
+TIMER	5.796e+00	6.049e+00	6.349e+00	2	return P3 results
+TIMER	1.152e+01	1.170e+01	1.190e+01	2	return P2 results
+TIMER	4.824e+03	4.824e+03	4.824e+03	1	bulk_locate
+TIMER	8.962e+02	9.177e+02	9.539e+02	2	Phase I: local queries
+TIMER	5.854e+01	5.959e+01	6.015e+01	2	Phase I: all2all patterns
+TIMER	3.209e+03	3.406e+03	3.553e+03	2	Phase II: local_locate_possible
+TIMER	1.230e+02	1.246e+02	1.252e+02	2	all2all patterns for cmp
+TIMER	9.789e+01	1.028e+02	1.068e+02	2	Phase III: local strcmp
+TIMER	5.737e+00	6.227e+00	6.595e+00	2	return P3 results
+TIMER	1.150e+01	1.172e+01	1.193e+01	2	return P2 results
+TIMER	4.820e+03	4.820e+03	4.821e+03	1	bulk_locate
+TIMER	9.014e+02	9.192e+02	9.532e+02	2	Phase I: local queries
+TIMER	5.991e+01	6.094e+01	6.156e+01	2	Phase I: all2all patterns
+TIMER	3.207e+03	3.407e+03	3.552e+03	2	Phase II: local_locate_possible
+TIMER	1.232e+02	1.246e+02	1.252e+02	2	all2all patterns for cmp
+TIMER	9.851e+01	1.031e+02	1.069e+02	2	Phase III: local strcmp
+TIMER	5.733e+00	6.137e+00	6.406e+00	2	return P3 results
+TIMER	1.155e+01	1.201e+01	1.328e+01	2	return P2 results
+TIMER	4.821e+03	4.822e+03	4.822e+03	1	bulk_locate
+TIMER	8.957e+02	9.176e+02	9.524e+02	2	Phase I: local queries
+TIMER	5.831e+01	5.949e+01	6.019e+01	2	Phase I: all2all patterns
+TIMER	3.224e+03	3.418e+03	3.576e+03	2	Phase II: local_locate_possible
+TIMER	1.237e+02	1.252e+02	1.259e+02	2	all2all patterns for cmp
+TIMER	9.770e+01	1.031e+02	1.077e+02	2	Phase III: local strcmp
+TIMER	5.793e+00	5.991e+00	6.222e+00	2	return P3 results
+TIMER	1.143e+01	1.209e+01	1.300e+01	2	return P2 results
+TIMER	4.844e+03	4.844e+03	4.844e+03	1	bulk_locate
+TIMER	8.961e+02	9.181e+02	9.545e+02	2	Phase I: local queries
+TIMER	5.832e+01	5.924e+01	5.996e+01	2	Phase I: all2all patterns
+TIMER	3.206e+03	3.403e+03	3.551e+03	2	Phase II: local_locate_possible
+TIMER	1.231e+02	1.246e+02	1.253e+02	2	all2all patterns for cmp
+TIMER	9.739e+01	1.026e+02	1.064e+02	2	Phase III: local strcmp
+TIMER	5.780e+00	6.068e+00	6.247e+00	2	return P3 results
+TIMER	1.144e+01	1.156e+01	1.170e+01	2	return P2 results
+TIMER	4.817e+03	4.818e+03	4.818e+03	1	bulk_locate

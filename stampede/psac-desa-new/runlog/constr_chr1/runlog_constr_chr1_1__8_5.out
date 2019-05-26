@@ -1,0 +1,157 @@
+== Node distribution == 
+== p=8 processes on 1 nodes ==
+--  Node: 'c506-044.stampede2.tacc.utexas.edu' (8/8)
+        Ranks: 0, 1, 2, 3, 4, 5, 6, 7
+TIMER	1.005e+02	1.015e+02	1.029e+02	1	read input file
+TIMER	1.161e+01	1.161e+01	1.161e+01	2	desa_construct: cpy str
+Alphabet: {sigma=4, l=3, A=[A, C, G, T]}
+TIMER	1.933e+01	1.933e+01	1.935e+01	3	get alphabet
+TIMER	1.223e+02	1.234e+02	1.244e+02	4	kmer-gen
+TIMER	9.900e+01	9.982e+01	1.007e+02	5	shift-buckets
+TIMER	5.000e+03	5.008e+03	5.021e+03	5	ISA-to-SA
+TIMER	3.287e+02	3.450e+02	3.515e+02	5	init-lcp
+iteration 21: unfinished buckets = 3772201, unfinished elements = 14712244
+TIMER	1.223e+02	1.232e+02	1.239e+02	5	rebucket
+TIMER	1.782e+03	1.786e+03	1.789e+03	5	SA-to-ISA
+TIMER	7.386e+03	7.386e+03	7.386e+03	5	sac-iteration
+Starting Bucket chasing algorithm
+unresolved = 14712245, unfinished = 3772201
+TIMER	7.340e+01	7.341e+01	7.342e+01	5	get active elements
+TIMER	1.555e-02	1.601e-02	1.637e-02	6	bulk_query: get recv_counts
+TIMER	1.229e+01	1.427e+01	1.645e+01	6	bulk_query: all2all queries
+Avg queries: 1.839e+06, max queries on proc 4: 4223136
+Inbalance factor: 2.296e+00x
+TIMER	1.157e+01	2.042e+01	4.610e+01	6	bulk_query: local query
+TIMER	8.360e+00	9.895e+00	1.087e+01	6	bulk_query: all2all query results
+TIMER	4.691e+02	4.738e+02	4.777e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	8.266e+00	9.622e+00	1.072e+01	7	resolve_next_lcp: set LCP
+TIMER	4.885e+02	4.885e+02	4.885e+02	7	LCP update
+unresolved = 5543898, unfinished = 1943843
+TIMER	1.021e+03	1.021e+03	1.021e+03	5	bucket-chaising iteration
+TIMER	1.507e-02	1.833e-02	2.557e-02	6	bulk_query: get recv_counts
+TIMER	4.437e+00	6.397e+00	8.176e+00	6	bulk_query: all2all queries
+Avg queries: 6.930e+05, max queries on proc 4: 2568719
+Inbalance factor: 3.707e+00x
+TIMER	1.260e+00	5.434e+00	2.309e+01	6	bulk_query: local query
+TIMER	1.857e+00	3.225e+00	3.613e+00	6	bulk_query: all2all query results
+TIMER	2.806e+02	2.807e+02	2.809e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	4.084e+00	4.191e+00	4.345e+00	7	resolve_next_lcp: set LCP
+TIMER	2.853e+02	2.853e+02	2.853e+02	7	LCP update
+unresolved = 3214279, unfinished = 1330905
+TIMER	5.076e+02	5.089e+02	5.105e+02	5	bucket-chaising iteration
+TIMER	1.273e-02	1.329e-02	1.372e-02	6	bulk_query: get recv_counts
+TIMER	2.422e+00	3.902e+00	5.149e+00	6	bulk_query: all2all queries
+Avg queries: 4.018e+05, max queries on proc 4: 1798501
+Inbalance factor: 4.476e+00x
+TIMER	2.265e-01	2.820e+00	1.268e+01	6	bulk_query: local query
+TIMER	2.560e+00	3.132e+00	3.343e+00	6	bulk_query: all2all query results
+TIMER	2.609e+02	2.610e+02	2.610e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	2.356e+00	2.411e+00	2.484e+00	7	resolve_next_lcp: set LCP
+TIMER	2.636e+02	2.636e+02	2.636e+02	7	LCP update
+unresolved = 2059860, unfinished = 924799
+TIMER	4.020e+02	4.024e+02	4.038e+02	5	bucket-chaising iteration
+TIMER	1.163e-02	1.198e-02	1.214e-02	6	bulk_query: get recv_counts
+TIMER	1.621e+00	2.547e+00	3.421e+00	6	bulk_query: all2all queries
+Avg queries: 2.575e+05, max queries on proc 4: 1243213
+Inbalance factor: 4.828e+00x
+TIMER	5.808e-02	1.585e+00	7.903e+00	6	bulk_query: local query
+TIMER	8.682e-01	1.209e+00	1.372e+00	6	bulk_query: all2all query results
+TIMER	2.507e+02	2.507e+02	2.508e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	1.333e+00	1.396e+00	1.469e+00	7	resolve_next_lcp: set LCP
+TIMER	2.523e+02	2.523e+02	2.523e+02	7	LCP update
+unresolved = 1420247, unfinished = 659187
+TIMER	3.385e+02	3.385e+02	3.386e+02	5	bucket-chaising iteration
+TIMER	1.042e-02	1.103e-02	1.216e-02	6	bulk_query: get recv_counts
+TIMER	1.054e+00	1.709e+00	2.307e+00	6	bulk_query: all2all queries
+Avg queries: 1.775e+05, max queries on proc 4: 852966
+Inbalance factor: 4.805e+00x
+TIMER	2.525e-02	9.396e-01	4.748e+00	6	bulk_query: local query
+TIMER	4.529e-01	6.123e-01	6.736e-01	6	bulk_query: all2all query results
+TIMER	2.390e+02	2.390e+02	2.391e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	8.680e-01	9.162e-01	9.797e-01	7	resolve_next_lcp: set LCP
+TIMER	2.401e+02	2.401e+02	2.401e+02	7	LCP update
+unresolved = 983947, unfinished = 476015
+TIMER	2.981e+02	2.981e+02	2.982e+02	5	bucket-chaising iteration
+TIMER	9.966e-03	1.057e-02	1.098e-02	6	bulk_query: get recv_counts
+TIMER	6.872e-01	1.088e+00	1.502e+00	6	bulk_query: all2all queries
+Avg queries: 1.230e+05, max queries on proc 4: 554804
+Inbalance factor: 4.511e+00x
+TIMER	3.726e-02	6.066e-01	2.835e+00	6	bulk_query: local query
+TIMER	3.642e-01	4.954e-01	5.777e-01	6	bulk_query: all2all query results
+TIMER	2.382e+02	2.383e+02	2.383e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	6.792e-01	7.338e-01	7.831e-01	7	resolve_next_lcp: set LCP
+TIMER	2.392e+02	2.392e+02	2.392e+02	7	LCP update
+unresolved = 630245, unfinished = 309523
+TIMER	2.790e+02	2.790e+02	2.790e+02	5	bucket-chaising iteration
+TIMER	9.342e-03	9.869e-03	1.025e-02	6	bulk_query: get recv_counts
+TIMER	4.407e-01	6.469e-01	8.768e-01	6	bulk_query: all2all queries
+Avg queries: 7.878e+04, max queries on proc 4: 314249
+Inbalance factor: 3.989e+00x
+TIMER	2.128e-02	3.357e-01	1.277e+00	6	bulk_query: local query
+TIMER	2.548e-01	2.760e-01	2.910e-01	6	bulk_query: all2all query results
+TIMER	2.364e+02	2.364e+02	2.364e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	6.026e-01	6.263e-01	6.694e-01	7	resolve_next_lcp: set LCP
+TIMER	2.372e+02	2.372e+02	2.372e+02	7	LCP update
+unresolved = 346601, unfinished = 170433
+TIMER	2.607e+02	2.607e+02	2.607e+02	5	bucket-chaising iteration
+TIMER	8.053e-03	8.638e-03	9.300e-03	6	bulk_query: get recv_counts
+TIMER	2.262e-01	3.343e-01	3.973e-01	6	bulk_query: all2all queries
+Avg queries: 4.333e+04, max queries on proc 4: 145741
+Inbalance factor: 3.364e+00x
+TIMER	1.975e-02	1.679e-01	5.775e-01	6	bulk_query: local query
+TIMER	1.514e-01	1.738e-01	1.878e-01	6	bulk_query: all2all query results
+TIMER	2.357e+02	2.357e+02	2.357e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	3.862e-01	4.107e-01	4.278e-01	7	resolve_next_lcp: set LCP
+TIMER	2.362e+02	2.362e+02	2.362e+02	7	LCP update
+unresolved = 162762, unfinished = 81381
+TIMER	2.482e+02	2.482e+02	2.482e+02	5	bucket-chaising iteration
+TIMER	7.252e-03	7.740e-03	8.129e-03	6	bulk_query: get recv_counts
+TIMER	1.208e-01	2.121e-01	2.783e-01	6	bulk_query: all2all queries
+Avg queries: 2.035e+04, max queries on proc 3: 114302
+Inbalance factor: 5.618e+00x
+TIMER	1.813e-02	8.662e-02	3.983e-01	6	bulk_query: local query
+TIMER	8.889e-02	1.108e-01	1.217e-01	6	bulk_query: all2all query results
+TIMER	2.349e+02	2.349e+02	2.349e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	1.389e-01	1.466e-01	1.737e-01	7	resolve_next_lcp: set LCP
+TIMER	2.351e+02	2.351e+02	2.351e+02	7	LCP update
+unresolved = 92256, unfinished = 46128
+TIMER	2.415e+02	2.415e+02	2.415e+02	5	bucket-chaising iteration
+TIMER	7.348e-03	7.679e-03	8.093e-03	6	bulk_query: get recv_counts
+TIMER	1.052e-01	1.857e-01	2.454e-01	6	bulk_query: all2all queries
+Avg queries: 1.153e+04, max queries on proc 3: 92256
+Inbalance factor: 8.000e+00x
+TIMER	1.838e-02	5.137e-02	2.570e-01	6	bulk_query: local query
+TIMER	8.283e-02	1.007e-01	1.139e-01	6	bulk_query: all2all query results
+TIMER	2.377e+02	2.377e+02	2.377e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	6.804e-02	9.207e-02	1.206e-01	7	resolve_next_lcp: set LCP
+TIMER	2.379e+02	2.379e+02	2.379e+02	7	LCP update
+unresolved = 49248, unfinished = 24624
+TIMER	2.421e+02	2.421e+02	2.421e+02	5	bucket-chaising iteration
+TIMER	6.454e-03	6.701e-03	6.918e-03	6	bulk_query: get recv_counts
+TIMER	4.130e-02	4.798e-02	8.071e-02	6	bulk_query: all2all queries
+Avg queries: 6.156e+03, max queries on proc 3: 49248
+Inbalance factor: 8.000e+00x
+TIMER	1.834e-02	3.965e-02	1.644e-01	6	bulk_query: local query
+TIMER	2.098e-02	6.567e-02	1.082e-01	6	bulk_query: all2all query results
+TIMER	2.349e+02	2.349e+02	2.349e+02	7	resolve_next_lcp: bulk_rmq
+TIMER	8.918e-02	1.063e-01	1.258e-01	7	resolve_next_lcp: set LCP
+TIMER	2.351e+02	2.351e+02	2.351e+02	7	LCP update
+unresolved = 0, unfinished = 0
+TIMER	2.373e+02	2.373e+02	2.373e+02	5	bucket-chaising iteration
+TIMER	4.157e+03	4.157e+03	4.157e+03	4	construct-msgs
+TIMER	2.439e+01	2.462e+01	2.485e+01	4	fix-isa
+TIMER	1.171e+04	1.171e+04	1.171e+04	2	desa_construct: SA/LCP construct
+TIMER	4.610e+02	4.610e+02	4.610e+02	2	desa_construct: TLI construct
+TIMER	2.003e-03	2.215e-03	2.479e-03	3	repartition: 1D-partition
+TIMER	2.570e-02	2.652e-02	2.752e-02	2	desa_construct: 1-D partition
+TIMER	3.355e+02	3.359e+02	3.361e+02	3	repartition: redistribute
+TIMER	3.361e+02	3.361e+02	3.362e+02	2	desa_construct: repartition
+TIMER	2.248e+02	2.352e+02	2.418e+02	2	desa_construct: RMQ construct
+TIMER	1.577e-02	2.822e-02	3.290e-02	3	bulk_query: get recv_counts
+TIMER	1.188e+02	1.215e+02	1.231e+02	3	bulk_query: all2all queries
+Avg queries: 2.816e+07, max queries on proc 1: 28160084
+Inbalance factor: 1.000e+00x
+TIMER	3.304e+02	3.388e+02	3.439e+02	3	bulk_query: local query
+TIMER	1.494e+01	1.563e+01	1.647e+01	3	bulk_query: all2all query results
+TIMER	1.539e+03	1.543e+03	1.550e+03	2	desa_construct: Lc naive construct
+TIMER	1.431e+04	1.431e+04	1.431e+04	1	construct idx
